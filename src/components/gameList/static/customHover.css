@@ -1,0 +1,17 @@
+.custom-hover-icon,
+.custom-hover-list{
+    transition: background-color 0.15s;
+    cursor: pointer;
+}
+.custom-hover-icon:hover{
+    background-color: #5be4ff;
+}
+.custom-hover-icon:active{
+    background-color: #93ebfd;
+}
+.custom-hover-list:hover{
+    background-color: #e4e4e4;
+}
+.custom-hover-list:active{
+    background-color: #eeeeee;
+}
