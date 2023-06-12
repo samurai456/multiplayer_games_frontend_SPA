@@ -14,7 +14,7 @@ import { useMemo, useState, useEffect } from 'react'
 import { CustomToast } from './components/customToast/customToastComponent.jsx'
 
 function App() {
-  const ws = useMemo(()=>new CustomWs('ws://localhost:8000'), [])
+  const ws = useMemo(()=>new CustomWs(`ws://${location.host}`), [])
   const [toastText, setToastText] = useState('');
   const [showToast, setShowToast] = useState(false);
   ws.onmessage=m=>console.log(m);
